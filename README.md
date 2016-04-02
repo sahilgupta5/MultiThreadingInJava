@@ -7,4 +7,5 @@ Several examples which explain and implement the features in Java that enable mu
 3. Use of synchronized keyword which helps in solving the accessibility concurrency problem i.e. An access problem can occur if several thread access and change the same shared data at the same time.  Toggle between the synchronized incrementCounter method i.e. syncIncrementCounter and incrementCounter to see the use. The synchronized keyword in Java ensures:
   - that only a single thread can execute a block of code at the same time.
   - that each thread entering a synchronized block of code sees the effects of all previous modifications that were guarded by the same lock.
-4. Executor framework
+4. Use of multiple locks in synchornized code blocks to improve the speed of execution vs. using a single intrinsic lock of the object when used with synchronized methods.
+5. Executor framework
