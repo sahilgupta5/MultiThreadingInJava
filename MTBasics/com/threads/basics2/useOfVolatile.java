@@ -66,7 +66,7 @@ public class useOfVolatile {
 		 * after 2 and even will remain even after adding 2.
 		 */
 
-		while (runNum < 10000) {
+		while (runNum < 1000000) {
 			for (int i = 0; i < TOTAL_THREADS; ++i)
 				threads[i] = new longThread(volatileData);
 			// Start all reader threads.
