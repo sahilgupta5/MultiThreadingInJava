@@ -4,6 +4,7 @@
 	<classpathentry kind="src" path="MT2ThreadPoolsVsSeveralThreads"/>
 	<classpathentry kind="src" path="MTMiscDeadlockSemaphores"/>
 	<classpathentry kind="src" path="MiscTutorials"/>
+	<classpathentry kind="src" path="MTBasics"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
