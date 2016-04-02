@@ -60,7 +60,7 @@ class runnableRunner1 implements Runnable {
 	}
 }
 
-public class threadWithRunnable {
+public class ThreadWithRunnable {
 
 	public void case1() {
 		Thread r1 = new Thread(new runnableRunner(0, 1));
@@ -79,7 +79,7 @@ public class threadWithRunnable {
 	}
 
 	public static void main(String args[]) {
-		threadWithRunnable tx = new threadWithRunnable();
+		ThreadWithRunnable tx = new ThreadWithRunnable();
 		// tx.case1();
 		 tx.case2();
 	}

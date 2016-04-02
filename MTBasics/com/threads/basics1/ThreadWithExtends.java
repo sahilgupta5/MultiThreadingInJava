@@ -59,7 +59,7 @@ class runner1 extends Thread {
 	}
 }
 
-public class threadWithExtends {
+public class ThreadWithExtends {
 
 	public void case1() {
 		runner r1 = new runner(0, 1);
@@ -78,7 +78,7 @@ public class threadWithExtends {
 	}
 
 	public static void main(String args[]) {
-		threadWithExtends tx = new threadWithExtends();
+		ThreadWithExtends tx = new ThreadWithExtends();
 		tx.case1();
 		// tx.case2();
 	}

@@ -14,7 +14,7 @@ import java.util.Random;
  *
  */
 
-public class useOfSynchronizedBlocks {
+public class UseOfSynchronizedBlocks {
 
 	private ArrayList<Integer> a1 = new ArrayList<Integer>();
 	private ArrayList<Integer> a2 = new ArrayList<Integer>();
@@ -76,7 +76,7 @@ public class useOfSynchronizedBlocks {
 		// + usb.a2.size());
 		// System.out.println("Done ...\n");
 
-		final useOfSynchronizedBlocks usb1 = new useOfSynchronizedBlocks();
+		final UseOfSynchronizedBlocks usb1 = new UseOfSynchronizedBlocks();
 		System.out.println("Start ...");
 		long timeStart1 = System.currentTimeMillis();
 		Thread t1 = new Thread(new Runnable() {

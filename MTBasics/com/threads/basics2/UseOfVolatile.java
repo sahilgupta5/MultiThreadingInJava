@@ -48,7 +48,7 @@ class longThread extends Thread {
 
 }
 
-public class useOfVolatile {
+public class UseOfVolatile {
 	private final static int TOTAL_THREADS = 2;
 
 	public static void main(String[] args) throws InterruptedException {

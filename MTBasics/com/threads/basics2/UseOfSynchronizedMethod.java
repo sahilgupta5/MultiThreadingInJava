@@ -19,7 +19,7 @@ package com.threads.basics2;
  *
  */
 
-public class useOfSynchronizedMethod {
+public class UseOfSynchronizedMethod {
 
 	static int counter = 0;
 
