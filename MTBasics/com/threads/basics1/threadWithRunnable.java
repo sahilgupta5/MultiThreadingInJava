@@ -1,18 +1,18 @@
-package com.threads.starting;
+package com.threads.basics1;
 
 /**
- * This class spawns a thread by extending the thread class. Here the attribute
- * i is static and shared by all threads. Run the test cases to see the
- * behavior.
+ * This class spawns a thread by implementing the Runnable interface. Here the
+ * attribute i is static and shared by all threads. Run the test cases to see
+ * the behavior.
  * 
  * @author Sahil Gupta
  */
 
-class runner extends Thread {
+class runnableRunner implements Runnable {
 	static int i;
 	int threadCount;
 
-	public runner(int j, int threadCount) {
+	public runnableRunner(int j, int threadCount) {
 		i = j;
 		this.threadCount = threadCount;
 		System.out.println("Hello. Thread count: " + threadCount
@@ -31,17 +31,18 @@ class runner extends Thread {
 }
 
 /**
- * This class spawns a thread by extending the thread class. Here the attribute
- * i is separate for all objects. Run the test cases to see the behavior.
+ * This class spawns a thread by implementing the Runnable interface. Here the
+ * attribute i is separate for all objects. Run the test cases to see the
+ * behavior.
  * 
  * @author Sahil Gupta
  */
 
-class runner1 extends Thread {
+class runnableRunner1 implements Runnable {
 	int i;
 	int threadCount;
 
-	public runner1(int j, int threadCount) {
+	public runnableRunner1(int j, int threadCount) {
 		this.i = j;
 		this.threadCount = threadCount;
 		System.out.println("Hello. Thread count: " + threadCount
@@ -59,27 +60,27 @@ class runner1 extends Thread {
 	}
 }
 
-public class threadWithExtends {
+public class threadWithRunnable {
 
 	public void case1() {
-		runner r1 = new runner(0, 1);
-		runner r2 = new runner(50, 2);
+		Thread r1 = new Thread(new runnableRunner(0, 1));
+		Thread r2 = new Thread(new runnableRunner(50, 2));
 
 		r1.start();
 		r2.start();
 	}
 
 	public void case2() {
-		runner1 r3 = new runner1(0, 3);
-		runner1 r4 = new runner1(50, 4);
+		Thread r3 = new Thread(new runnableRunner1(0, 3));
+		Thread r4 = new Thread(new runnableRunner1(50, 4));
 
 		r3.start();
 		r4.start();
 	}
 
 	public static void main(String args[]) {
-		threadWithExtends tx = new threadWithExtends();
-		tx.case1();
-		// tx.case2();
+		threadWithRunnable tx = new threadWithRunnable();
+		// tx.case1();
+		 tx.case2();
 	}
 }
